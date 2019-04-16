@@ -1,8 +1,15 @@
-.content{
-    grid-area: c;
-    background-color: palevioletred;
-  }
   
-  .content img{
+.content img{
     width: 100%;
-  }
+}
+
+.wrp{
+  padding: 15px;
+}
+.contentBg{
+  width: 100%;
+  height: 200px;
+  background: url("https://www.ctvnews.ca/polopoly_fs/1.4037876!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}

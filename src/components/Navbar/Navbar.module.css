@@ -1,11 +1,23 @@
 .nav{
     grid-area: n;
-    background-color: skyblue;
+    padding: 10px;
+    border-right: 1px solid #ECECEC;
   }
 
 .item{
-      color: #fff;
+  color: #313131;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: 600;
   }
+.item a{
+  color: #313131;
+}
+
+.item a.activeLink{
+  color: #689f38;
+}
+
 .active{
-  color: red;
+  color: #689f38;
 }

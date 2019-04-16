@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import s from './Post.module.css'
-import LikeCounts from './LikeCounts/LikeCounts';
 
 const Post = (props) => {
     return (
         <div className={s.item}>
-            <img src="https://c6oxm85c.cloudimg.io/cdno/n/q85/https://az617363.vo.msecnd.net/imgmodels/models/md10001832/32c9cbac-ddb2-4c2a-b3f6-6f7bfd31703b_thumb.jpg" alt=""/>
-               { props.message }
-               <LikeCounts counts="10"/>
+            <div className={s.itemName}>
+                <img src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-256.png" alt=""/>
+                { props.message }
+            </div>
+            
+            <div className={s.like}>
+                <img src="https://cdn3.iconfinder.com/data/icons/streamline-icon-set-free-pack/48/Streamline-63-256.png" alt=""/> { props.likesCount }
+            </div>
                
         </div>
        

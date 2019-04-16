@@ -1,7 +1,19 @@
   .item{
-    color: yellow;
+    color: #313131;
   }
 
-  .item img{
-    width: 50px;
+  .itemName{
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .itemName img{
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  .like{
+    margin-bottom: 20px;
+  }
+  .like img{
+    max-width: 15px;
   }

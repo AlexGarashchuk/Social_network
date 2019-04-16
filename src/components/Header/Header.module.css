@@ -1,8 +1,11 @@
 .header{
     grid-area: h;
-    background-color: green;
+    border-bottom: 1px solid #ECECEC;
+    padding: 10px;
     }
      
-.header img{
-      width: 50px;
-    }
+.logo{
+      width: 30px;
+      margin: auto;
+      cursor: pointer;
+}
