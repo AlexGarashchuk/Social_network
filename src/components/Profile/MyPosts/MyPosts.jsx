@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import s from './MyPosts.module.css'
 import Post from './Post/Post';
 
+
 const MyPosts = (props) => {
+    let addPost=()=>{
+        let text = newPostElement.current.value;
+        console.log(text)};
+    let newPostElement = React.createRef();
+
 
     let posts = props.postsData.map((p) => {
         return(
@@ -14,8 +20,8 @@ const MyPosts = (props) => {
        <div className={s.wrp}>
             My posts
             <div>
-                <textarea></textarea>
-                <button>ADD POST</button>
+                <textarea ref={newPostElement}></textarea>
+                <button onClick={addPost}>ADD POST</button>
                 <button>REMOVE</button>
             </div>
             <div className={s.posts}>

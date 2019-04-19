@@ -5,33 +5,23 @@ import Message from './Message/Message';
 
 
 const Dialogs = (props) => {
-
-    // let dialogsData = [
-    //     {id:0, name: "Dima"},
-    //     {id:1, name: "Ivan"},
-    //     {id:2, name: "Roma"},
-    //     {id:3, name: "Inna"},
-    //     {id:4, name: "Olha"}
-    // ];
-    // let messagesData = [
-    //     {id:0, message: "Hi"},
-    //     {id:1, message: "How are you?"},
-    //     {id:2, message: "The weather is good!"},
-    //     {id:3, message: "The weather so good!"},
-    //     {id:4, message: "The weather is cool!"}
-    // ]
-
-let dialogs = props.dialogsData.map((d) => {
+let dialogs = props.state.dialogsData.map((d) => {
     return(
         <DialogsItem name={d.name} id={d.id} />
     )
 });
 
-let messages = props.messagesData.map((m) => {
+let messages = props.state.messagesData.map((m) => {
     return(
         <Message message={m.message}/>
     )
 });
+let newMessage = React.createRef();
+let addMessage = () =>{
+    let text = newMessage.current.value;
+    console.log(text);
+}
+
 
     return (
         <div className={s.content}>
@@ -44,7 +34,10 @@ let messages = props.messagesData.map((m) => {
                         { messages }
                     </div>
                 </div>
-
+                <div className={s.newMessage}>
+                    <textarea className={s.newMessageContent} ref={newMessage}></textarea>
+                    <button className={s.newMessageBtn} onClick={addMessage}>Add message</button>
+                </div>
             </div>
         </div>
 

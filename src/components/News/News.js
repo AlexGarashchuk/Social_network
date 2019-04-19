@@ -6,7 +6,7 @@ const News = () => {
     return (
         <div className={s.content}>
             <div className={s.wrp}>
-            News
+                News
             </div>
         </div>
       
@@ -15,4 +15,5 @@ const News = () => {
     )
 
 }
-    export default News;
+    
+export default News;

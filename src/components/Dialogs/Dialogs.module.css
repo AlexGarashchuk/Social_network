@@ -28,3 +28,21 @@
 .message{
 
 }
+.newMessage{
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  grid-gap: 10px;
+}
+
+.newMessageContent{
+  outline: none;
+  resize: none;
+  padding: 10px;
+}
+
+.newMessageBtn{
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid #689f38;
+  color: #689f38;
+}

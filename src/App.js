@@ -19,10 +19,10 @@ const App = (props) => {
                 <Navbar />
                 <div className="appWrapperContent">
                     <Route path="/profile" render={ () => { return(<Profile
-                        postsData={props.state.profile.postsData} />)}}/>
+                        state={props.state.profile} />)}}/>
                     <Route path="/dialogs" render={ () => { return(<Dialogs 
-                        dialogsData={props.state.messages.dialogsData} 
-                        messagesData={props.state.messages.messagesData}/>)}}/>
+                        state={props.state.messages} 
+                        state={props.state.messages}/>)}}/>
                     <Route component={News} path="/news"/>
                     <Route component={Music} path="/music"/>
                     <Route component={Settings} path="/settings"/>

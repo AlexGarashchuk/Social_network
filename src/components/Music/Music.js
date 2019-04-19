@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import s from './Music.module.css'
 
 
-const News = () => {
+const Music = () => {
     return (
         <div className={s.content}>
             <div className={s.wrp}>
-                News
+                Music
             </div>
         </div>
       
@@ -15,4 +15,4 @@ const News = () => {
     )
 
 }
-    export default News;
+    export default Music;
