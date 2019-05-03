@@ -1,6 +1,6 @@
 let store = {
-    _state :{
-        profilePage:{
+    _state: {
+        profilePage: {
             postsData: [
                 {id:0, message:"Hi how are you?", likesCount:12},
                 {id:1, message:"Hello world", likesCount:1},
@@ -25,34 +25,47 @@ let store = {
                 {id:4, message: "The weather is cool!"}
             ]
         }  
-    },
-    getState() {
-        return this._state;
-    },
-    rerenderEntireTree () {
-        console.log('State changed')
-    },
-    addPost () {
+},
+_callSubscriber() {
+    console.log('state changed');
+},
+getState() {
+    return this._state;
+},
+subscribe (observer) {
+    this._callSubscriber = observer;
+},
+// addPost () {
+//     let newPost = {
+//         id: 5,
+//         message: this._state.profilePage.newPostText,
+//         likesCount: 0
+//     };
+//     this._state.profilePage.postsData.push(newPost);
+//     this._state.profilePage.newPostText = '';
+//     this._callSubscriber(this._state);
+// },
+// updateNewPostText (newPostText) {
+//     this._state.profilePage.newPostText = newPostText;
+//     this._callSubscriber(this._state);
+// },
+dispatch(action){
+    if (action.type === "ADD-POST"){
         let newPost = {
             id: 5,
             message: this._state.profilePage.newPostText,
             likesCount: 0
         };
-    
         this._state.profilePage.postsData.push(newPost);
         this._state.profilePage.newPostText = '';
-        this.rerenderEntireTree(this._state);
-    },
-    updateNewPostText (newPostText) {
-        this._state.profilePage.newPostText = newPostText;
-        this.rerenderEntireTree(this._state);
-    },
-    subscribe (observer) {
-        this.rerenderEntireTree = observer
+        this._callSubscriber(this._state);
+    }else if (action.type === "UPDATE-NEW-POST-TEXT"){
+        this._state.profilePage.newPostText = action.newText;
+        this._callSubscriber(this._state);
     }
-
+}
 }
 
 
-export default store;
 window.store = store;
+export default store;
