@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className={`${s.item} ${s.active}`}>
                 <NavLink to="/dialogs" activeClassName={s.activeLink}>Messages</NavLink>
             </div>
-            <div className={s.item}>
+            {/* <div className={s.item}>
                 <NavLink to="/news" activeClassName={s.activeLink}>News</NavLink>
             </div>
             <div className={s.item}>
@@ -20,7 +20,7 @@ const Navbar = () => {
             </div>
             <div className={s.item}>
                 <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
-            </div>
+            </div> */}
         </nav>
 
 

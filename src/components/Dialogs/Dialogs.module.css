@@ -22,11 +22,9 @@
 .dialog{
   margin-bottom: 10px;
 }
-.messages{
-  padding: 10px;
-}
-.message{
 
+.message{
+  padding: 10px;
 }
 .newMessage{
   display: grid;
