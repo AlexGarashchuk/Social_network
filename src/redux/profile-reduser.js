@@ -10,6 +10,8 @@ let initialState = {
     ],
     newPostText: "Any text"
 }
+
+
 let profileReduser = (state = initialState, action) => {
     switch(action.type) {
         case ADD_POST : 

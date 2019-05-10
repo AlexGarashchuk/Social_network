@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import store from './redux/state';
-import subscribe from './redux/state';
-import {updateNewPostText}  from './redux/state';
+import store from './redux/redux-store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -10,6 +8,7 @@ import App from './App';
 import {BrowserRouter, Route } from 'react-router-dom';
 
 let rerenderEntireTree = (state) => {
+        
     ReactDOM.render(
         <BrowserRouter>
             <App state={state}  
@@ -20,7 +19,10 @@ let rerenderEntireTree = (state) => {
 
 rerenderEntireTree(store.getState());
 
-store.subscribe(rerenderEntireTree);
+store.subscribe( () => {
+        let state = store.getState()
+        rerenderEntireTree(state)
+});
 
 
 // serviceWorker.unregister();
