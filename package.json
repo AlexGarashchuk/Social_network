@@ -28,5 +28,9 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+<<<<<<< HEAD
   "homepage": "https://alexgarashchuk.github.io/Social_network/"
+=======
+  "homepage": " https://alexgarashchuk.github.io/Social_network/"
+>>>>>>> 7bea17d1f4e43f0e5173bb63d6bc93de001f1156
 }
