@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
+    "homepage": "https://alexgarashchuk.github.io/Social_network",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^5.0.0",
@@ -27,7 +28,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "homepage": "https://alexgarashchuk.github.io/Social_network/"
-
+  ]
 }
