@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "Social_network": " https://alexgarashchuk.github.io/Social_network/",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^5.0.0",
