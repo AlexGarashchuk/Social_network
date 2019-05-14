@@ -27,6 +27,7 @@ const App = (props) => {
                         store={props.store}
                         />)}}/>
                     <Route component={News} path="/news"/>
+                    <h1></h1>
                     <Route component={Music} path="/music"/>
                     <Route component={Settings} path="/settings"/>
                 </div>
