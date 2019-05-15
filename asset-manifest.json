@@ -1,16 +1,15 @@
 {
-  "files": {
-    "main.css": "/github.io/test/static/css/main.2cce8147.chunk.css",
-    "main.js": "/github.io/test/static/js/main.c9f92686.chunk.js",
-    "main.js.map": "/github.io/test/static/js/main.c9f92686.chunk.js.map",
-    "runtime~main.js": "/github.io/test/static/js/runtime~main.f7c9f722.js",
-    "runtime~main.js.map": "/github.io/test/static/js/runtime~main.f7c9f722.js.map",
-    "static/js/2.b41502e9.chunk.js": "/github.io/test/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/github.io/test/static/js/2.b41502e9.chunk.js.map",
-    "index.html": "/github.io/test/index.html",
-    "precache-manifest.3ccc17310a81f74bb774d962995ba24e.js": "/github.io/test/precache-manifest.3ccc17310a81f74bb774d962995ba24e.js",
-    "service-worker.js": "/github.io/test/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/github.io/test/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/github.io/test/static/media/logo.5d5d9eef.svg"
-  }
+  "main.css": "/Social_network/static/css/main.58b07ae6.chunk.css",
+  "main.js": "/Social_network/static/js/main.a7984bab.chunk.js",
+  "main.js.map": "/Social_network/static/js/main.a7984bab.chunk.js.map",
+  "runtime~main.js": "/Social_network/static/js/runtime~main.eb5b1501.js",
+  "runtime~main.js.map": "/Social_network/static/js/runtime~main.eb5b1501.js.map",
+  "static/css/2.abeef3d2.chunk.css": "/Social_network/static/css/2.abeef3d2.chunk.css",
+  "static/js/2.2a896ceb.chunk.js": "/Social_network/static/js/2.2a896ceb.chunk.js",
+  "static/js/2.2a896ceb.chunk.js.map": "/Social_network/static/js/2.2a896ceb.chunk.js.map",
+  "index.html": "/Social_network/index.html",
+  "precache-manifest.ec7c24807c0958498e31e05afbe58efe.js": "/Social_network/precache-manifest.ec7c24807c0958498e31e05afbe58efe.js",
+  "service-worker.js": "/Social_network/service-worker.js",
+  "static/css/2.abeef3d2.chunk.css.map": "/Social_network/static/css/2.abeef3d2.chunk.css.map",
+  "static/css/main.58b07ae6.chunk.css.map": "/Social_network/static/css/main.58b07ae6.chunk.css.map"
 }
