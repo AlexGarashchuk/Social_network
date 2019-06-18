@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import s from './Post.module.css'
+import Avatar from './Avatar/Avatar';
 
 const Post = (props) => {
     return (
         <div className={s.item}>
             <div className={s.itemName}>
-                <img src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-256.png" alt=""/>
+                <Avatar />
                 { props.message }
             </div>
             
